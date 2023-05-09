@@ -11,7 +11,7 @@ font-family: 'Raleway', sans-serif; */
 	--dark-grayish-blue: hsl(236, 13%, 42%);
 	--very-dark-blue: hsl(240, 100%, 5%);
 
-	--paragraph-text: 14px;
+	--paragraph-text: 13px;
 	--inter-font: 'Inter', sans-serif;
 }
 
@@ -57,6 +57,10 @@ body {
 	font-size: 13px;
 }
 
+.nav-link:hover {
+	color: var(--soft-orange);
+}
+
 .last {
 	padding-right: 0;
 	margin-right: 0;
@@ -67,6 +71,7 @@ body {
 	grid-template-areas:
 		'coveri coveri new'
 		'question answer new';
+	gap: 16px;
 }
 
 .grid-item:first-child {
@@ -74,13 +79,9 @@ body {
 	padding-left: 0;
 }
 
-.grid-item {
-	padding: 10px 15px;
-}
-
 .headlines-cover {
 	grid-area: coveri;
-	max-width: 650px;
+	max-width: 630px;
 }
 
 .new-blogs {
@@ -107,6 +108,11 @@ body {
 .title {
 	font-size: 1rem;
 	margin: 5px 0;
+	cursor: pointer;
+}
+
+.title:hover {
+	color: var(--soft-orange);
 }
 
 .body {
@@ -124,14 +130,70 @@ body {
 
 .answer {
 	grid-area: answer;
-	line-height: 1.28;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	line-height: 1.35;
+	letter-spacing: 0.7px;
 	font-size: var(--paragraph-text);
 }
 
 .btn-primary {
 	display: block;
 	border: none;
-	background-color: var(--soft-orange);
-	padding: 10px 25px;
-	margin: 12px 0;
+	background-color: var(--soft-red);
+	padding: 15px 28px;
+	margin-top: 12px;
+	letter-spacing: 2.5px;
+	font-size: 11px;
+	width: fit-content;
+	cursor: pointer;
+	color: var(--off-white);
+}
+
+.btn-primary:hover {
+	background-color: var(--very-dark-blue);
+	color: var(--off-white);
+}
+
+.trending-section {
+	display: flex;
+	margin: 75px 0;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.card {
+	display: flex;
+}
+
+.card-image {
+	width: 80px;
+	height: 102px;
+}
+
+.card-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.card-number {
+	color: var(--grayish-blue);
+}
+
+.card-title {
+	font-weight: 800;
+	cursor: pointer;
+}
+
+.card-title:hover {
+	color: var(--soft-red);
+}
+
+.card-desc {
+	font-size: var(--paragraph-text);
+	line-height: 1.475;
+	color: rgba(0, 0, 0, 0.6);
 }
