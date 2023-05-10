@@ -1,4 +1,5 @@
 import headlinesCoverDesktop from '../assets/images/image-web-3-desktop.jpg';
+import headlinesCoverMobile from '../assets/images/image-web-3-mobile.jpg';
 import retroPCs from '../assets/images/image-retro-pcs.jpg';
 import topLaptops from '../assets/images/image-top-laptops.jpg';
 import gamingGrowth from '../assets/images/image-gaming-growth.jpg';
@@ -11,6 +12,7 @@ function Home() {
 					src={headlinesCoverDesktop}
 					className='headlines-cover grid-item'
 				/>
+				<img src={headlinesCoverMobile} className='headlines-cover-mobile' />
 				<div className='new-blogs grid-item'>
 					<h1>New</h1>
 					<div>
@@ -20,12 +22,17 @@ function Home() {
 					<hr />
 					<div>
 						<h2 className='title'>Hydrogen VS Electric Cars</h2>
-						<p className='body'>Will hydrogen-fueled cars ever catch to EVs?</p>
+						<p className='body'>
+							Will hydrogen-fueled cars ever catch to EVs? Will Smit Finds Out.
+						</p>
 					</div>
 					<hr />
 					<div>
 						<h2 className='title'>Hydrogen VS Electric Cars</h2>
-						<p className='body'>Will hydrogen-fueled cars ever catch to EVs?</p>
+						<p className='body'>
+							Will hydrogen-fueled cars ever catch to EVs? The Ottoman Empire
+							Just Collapsed and Here&apos;s how you can benefit
+						</p>
 					</div>
 				</div>
 				<div className='question grid-item'>The Bright Future of Web 3.0?</div>
